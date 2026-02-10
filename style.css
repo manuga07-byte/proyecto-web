@@ -1,0 +1,199 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #1a2a6c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    float: left;
+}
+
+header h1 {
+    font-size: 3.0rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Navegación Principal */
+nav {
+    background-color: #b21f1f;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fdbb2d;
+}
+
+/* Contenido Principal y Botones */
+/* Contenedor individual para cada deporte */
+.deporte-item {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en vertical (botón arriba, foto abajo) */
+    align-items: center;    /* Centra el botón y la foto */
+    gap: 15px;              /* Espacio entre el botón y la imagen */
+    margin-bottom: 30px;    /* Espacio entre grupos de deportes */
+}
+
+/* Ajuste de las imágenes */
+.deporte-item img {
+    width: 200px;           /* Ajusta el tamaño a tu gusto */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Asegurar que el contenedor principal distribuya bien los bloques */
+.contenedor-botones {
+    display: flex;
+    flex-wrap: wrap;        /* Permite que se pongan uno al lado del otro si hay sitio */
+    justify-content: center;
+    gap: 40px;              /* Espacio horizontal entre cada bloque de deporte */
+}
+
+main {
+    padding: 40px 20px;
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.boton {
+    display: inline-block;
+    padding: 30px 25px;
+    background-color: #1a2a6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton:hover {
+    background-color: #b21f1f;
+    transform: scale(1.05);
+}
+
+.contenedor-botones img {
+    max-width: 215px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fdbb2d;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Página Fórmula 1 */
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b21f1f;
+    margin-bottom: 30px;
+}
+
+main h3 {
+    margin-top: 30px;
+    color: #1a2a6c;
+}
+
+main p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+main ul {
+    margin: 15px 0 30px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #1a2a6c;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+/* Ajustes para Móviles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .contenedor-botones {
+        flex-direction: column;
+    }
+}
